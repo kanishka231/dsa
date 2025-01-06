@@ -1,0 +1,87 @@
+1.what is graph ?
+
+Solution:Graph can be represented as G = (V, E) where V is a set of vertices and E is a set of edges.
+
+type of graph :
+graph can be categorised based on sevral property:
+Based on direction:
+Directed Graph (Digraph): Edges have direction, indicating a one-way connection from one vertex to another.
+
+Example: Twitter follows (if A follows B, it doesn't imply B follows A).
+Representation: 𝐺=(𝑉,𝐸) G=(V,E), where 𝐸 E is a set of ordered pairs (𝑢,𝑣)(u,v).
+ordered pair means (u,v) is not same as (v,u)
+
+Undirected Graph: Edges have no direction, meaning the connection between two vertices is bidirectional.
+Example: Friendship on Facebook (if A is a friend of B, then B is a friend of A).
+Representation: 𝐺=(𝑉,𝐸)
+G=(V,E), where 𝐸 E is a set of unordered pairs (𝑢,𝑣)(u,v).
+unordered pair means (u,v) is same as (v,u) order does not matter 
+
+Based on weight:
+Weighted Graph: Edges have weights or labels, representing the strength or cost of the connection between vertices.
+Example: Road network with different road types (highway, local road, etc.) and their respective weights (distance, time, etc.).
+Representation: 𝐺=(𝑉,𝐸,𝑊) G=( V,E,W), where 𝑊 W is a set of weights associated with each edge.
+
+Unweighted Graph: All edges are treated equally; they do not have weights or costs associated with them.
+Example: Social networks where edges indicate only relationships.
+
+Based on Cycle:
+Cyclic Graph: Contains at least one cycle, meaning there is a path that starts and ends at the same vertex.
+Example: A road network with a loop or a cycle.
+Acyclic Graph: No cycles exist; every path starts and ends at different vertices.
+Example: A tree data structure.
+
+
+Based on Connectivity:
+Connected Graph: Every pair of vertices is connected by some path (direct or indirect).
+In an undirected graph, there is at least one path between any two nodes.
+Disconnected Graph: At least one pair of vertices is not connected by a path.
+Example: A social network with isolated user groups.
+
+Based on Density
+Sparse Graph: The number of edges is much less than the maximum possible edges (
+𝐸 ≪𝑉2 E≪V2).
+
+Example: A graph representing a friendship network with a small number of connections.
+Dense Graph: The number of edges is close to the maximum possible edges (𝐸≈𝑉2E≈V 2 ).
+
+Example: A fully connected network where every vertex is connected to every other vertex.
+
+
+Bipartite Graph :
+
+A graph where vertices can be divided into two disjoint sets U and V such that every edge connects a vertex in U to one in V.
+Example: A social network where users are either male or female, and friendships only exist between users of different genders.
+A bipartite graph is a type of graph in which the set of vertices can be divided into two disjoint subsets 
+𝑈 U and 𝑉 V such that every edge connects a vertex in 
+𝑈U to a vertex in 
+𝑉 V. In simpler terms, no two vertices within the same subset are connected by an edge.
+
+Formal Definition
+A graph 
+𝐺 =(𝑉,𝐸)
+G=(V,E) is bipartite if:
+
+The vertex set 
+V can be partitioned into two subsets U and V, i.e., 𝑉=𝑈 ∪ 𝑉 V=U ∪ V and 𝑈∩𝑉=∅U∩V=∅.
+For every edge (𝑢,𝑣)∈𝐸(u,v)∈E, one endpoint 
+𝑢∈𝑈 u∈U and the other endpoint 
+𝑣∈𝑉 v∈V.
+Characteristics
+No Odd Cycles: A graph is bipartite if and only if it does not contain any odd-length cycles.
+Two-Colorable: A bipartite graph can be colored using two colors such that no two adjacent vertices have the same color.
+Examples of Bipartite Graphs
+Example 1:
+Graph:
+Vertices: 𝑉={𝐴,𝐵,𝐶,𝐷,𝐸,𝐹}
+
+Edges: 𝐸={(𝐴,𝐷),(𝐴,𝐸),(𝐵,𝐸),(𝐶,𝐹)}
+
+
+Partition:𝑈={𝐴,𝐵,𝐶}  𝑉={𝐷,𝐸,𝐹}
+
+Here, every edge connects a vertex in 
+𝑈nU to a vertex in 𝑉 V.
+
+
+                
